@@ -22,17 +22,15 @@ export default function WeatherInfo(props){
           <div className="col-6">
             <div className="clearfix">
               <div>
-                <WeatherIcon
-                  code={props.data.icon} size={52}/>
+                <img alt="weather" src={props.data.iconUrl} />
               </div>
-              
+
               <div className="float-left">
-                <WeatherTemperature fahrenheit={props.data.temperature}/>
-                
+                <WeatherTemperature fahrenheit={props.data.temperature} />
               </div>
             </div>
           </div>
-         
+
           <div className="col-6">
             <ul>
               <li>Humidity: {props.data.humidity}% </li>

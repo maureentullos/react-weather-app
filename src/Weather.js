@@ -1,15 +1,17 @@
 import React, {useState} from "react";
-
 import WeatherInfo from "./WeatherInfo";
 import axios from "axios";
 import "./Weather.css";
+
+
 
 export default function Weather(props) {
   const [city, setCity]=useState(props.defaultCity);
   
   const [weatherData, setWeatherData] = useState({ready:false});
+  
   function handleResponse(response) {
-  console.log(response.data);
+  
   
   setWeatherData({
     ready: true,
@@ -19,11 +21,10 @@ export default function Weather(props) {
     city: response.data.name,
     description: response.data.weather[0].description,
     humidity: response.data.main.humidity,
-    iconUrl: `https://openweathermap.org/img/wn/${response.data.weather[0].icon}.png`,
+    iconUrl: response.data.weather[0].icon,
+
   });
-
   }
-
   function search() {
     const apiKey = "ed53d80a50f0ade46ca93a05ecdad3fc";
 
