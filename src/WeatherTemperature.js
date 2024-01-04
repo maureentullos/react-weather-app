@@ -23,7 +23,7 @@ function showFahrenheit(event) {
       </div>
     );
 } else {
-    let celsius = ((props.fahrenheit - 32) * 9) / 5;
+    let celsius = ((props.fahrenheit - 32) * 5) / 9;
     
     return (
       <div className="WeatherTemperature">

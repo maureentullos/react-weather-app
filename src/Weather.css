@@ -54,12 +54,12 @@
     margin-bottom: 20px;
 }
 
-.Weather canvas {
-    height: 52px;
+.Weather img {
+    height: 64px;
     margin-right: 5px;
     float: left;
     margin-right: 10px;
-    width: 52px;
+    width: 64px;
 }
 
 .Weather .units {
