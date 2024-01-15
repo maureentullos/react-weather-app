@@ -32,6 +32,10 @@
   
 }
 
+.Weather canvas {
+   margin: 5px auto;
+}
+
 .Weather ul {
     margin: 5px;
     padding: 5px;
